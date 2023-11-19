@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MOMO: Home</title>
+    <link href="https://fonts.googleapis.com/css2?family=Cardo:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/5b03f2e759.js" crossorigin="anonymous"></script>
+    <style>
+        body, html {
+            height: 100%;
+            margin: 0;
+            font-family: 'trebuchet MS', serif;
+            background-color: #000; /* Dark black background */
+            color: #fff; /* White color text */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+			/* Setting the background image */
+            background-image: url('background-pic.jpeg'); /* Replace with the path to your image */
+			background-size: cover; /* Cover the entire viewport */
+			background-position: center; /* Center the image in the viewport */
+			background-repeat: no-repeat; /* Do not repeat the image */
+			background-attachment: fixed; /* Optional: Fix the background */
+        }
+
+
+
+        .container {
+            width: 100%;
+            padding: 20px;
+        }
+
+        .brand-name {
+			font-size: 10em; /* Large font size for brand name */
+			font-weight: 700; /* Bold font weight */
+			letter-spacing: 0.05em; /* Adjusted letter spacing */
+			margin-bottom: 0em; /* Negative value to reduce space below */
+		}
+
+		.slogan {
+			font-size: 2em;
+			font-weight: 400;
+            margin-top: 0; /* Remove additional top margin */
+            background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
+            padding: 10px; /* Add padding around the text */
+            border-radius: 5px; /* Optional: adds rounded corners */
+		}
+
+
+
+        .contact-details {
+            font-size: 4em;
+            letter-spacing: 0.025em; /* Adjusted letter spacing */
+            margin-top: 0.5em;
+        }
+
+        .icon {
+            font-size: 1em; /* Icon size */
+            margin: 0 10px;
+        }
+
+        .contact-link {
+            color: #fff; /* Maintain white color for links */
+            text-decoration: none; /* No underline */
+            transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+        }
+
+        .contact-link:hover, .contact-link:focus {
+            opacity: 0.7; /* Slight fade effect on hover/focus */
+        }
+
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1 class="brand-name">MOMO</h1>
+        <p class="slogan"><i>Quality uniforms for quality institutions</i></p>
+        <div class="contact-details">
+            <a href="mailto:contact@brandname.com" class="contact-link">
+                <i class="fa-solid fa-envelope icon"></i>
+            </a>
+            <a href="https://wa.me/1234567890" class="contact-link" target="_blank">
+                <i class="fa-brands fa-whatsapp icon"></i>
+            </a>
+        </div>
+    </div>
+    <!-- Replace the following script src with your actual Font Awesome Kit script -->
+    <script src="https://kit.fontawesome.com/yourkit.js" crossorigin="anonymous"></script>
+</body>
+</html>
