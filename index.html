@@ -17,64 +17,69 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-			/* Setting the background image */
-            background-image: url('background-pic.jpeg'); /* Replace with the path to your image */
-			background-size: cover; /* Cover the entire viewport */
-			background-position: center; /* Center the image in the viewport */
-			background-repeat: no-repeat; /* Do not repeat the image */
-			background-attachment: fixed; /* Optional: Fix the background */
-        }
-
-
-
-        .container {
-            width: 100%;
-            padding: 20px;
+            background-image: url('background-pic.jpeg'); /* Replace with your image */
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
         }
 
         .brand-name {
-			font-size: 10em; /* Large font size for brand name */
-			font-weight: 700; /* Bold font weight */
-			letter-spacing: 0.05em; /* Adjusted letter spacing */
-			margin-bottom: 0em; /* Negative value to reduce space below */
-		}
+            font-size: 9em; /* Adjusted for mobile view */
+            font-weight: 700;
+            letter-spacing: 0.05em;
+            margin-bottom: 0.1em;
+        }
 
-		.slogan {
-			font-size: 2em;
-			font-weight: 400;
-            margin-top: 0; /* Remove additional top margin */
-            background-color: rgba(128, 128, 128, 0.5); /* Semi-transparent gray */
-            padding: 10px; /* Add padding around the text */
-            border-radius: 5px; /* Optional: adds rounded corners */
-		}
-
-
+        .slogan {
+            font-size: 1.2em; /* Adjusted for mobile view */
+            font-weight: 400;
+            margin-top: 0;
+            background-color: rgba(128, 128, 128, 0.5);
+            padding: 10px;
+            border-radius: 5px;
+            word-wrap: break-word; /* Ensure text fits in the container */
+        }
 
         .contact-details {
-            font-size: 4em;
-            letter-spacing: 0.025em; /* Adjusted letter spacing */
+            font-size: 1.5em; /* Adjusted for mobile view */
+            letter-spacing: 0.025em;
             margin-top: 0.5em;
         }
 
         .icon {
-            font-size: 1em; /* Icon size */
+            font-size: 1em;
             margin: 0 10px;
         }
 
         .contact-link {
-            color: #fff; /* Maintain white color for links */
-            text-decoration: none; /* No underline */
-            transition: opacity 0.3s ease; /* Smooth transition for hover effect */
+            color: #fff;
+            text-decoration: none;
+            transition: opacity 0.3s ease;
         }
 
         .contact-link:hover, .contact-link:focus {
-            opacity: 0.7; /* Slight fade effect on hover/focus */
+            opacity: 0.7;
         }
 
+        /* Media Queries for smaller screens */
+        @media (max-width: 768px) {
+            .brand-name {
+                font-size: 2em; /* Smaller font size on smaller screens */
+            }
+
+            .slogan {
+                font-size: 1em;
+            }
+
+            .contact-details {
+                font-size: 1em;
+            }
+        }
     </style>
 </head>
 <body>
-    <div class="container">
+    <div>
         <h1 class="brand-name">MOMO</h1>
         <p class="slogan"><i>Quality uniforms for quality institutions</i></p>
         <div class="contact-details">
