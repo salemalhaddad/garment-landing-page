@@ -17,7 +17,7 @@
             justify-content: center;
             align-items: center;
             text-align: center;
-            background-image: url('background-pic.jpeg'); /* Replace with your image */
+            background-image: url('Basic-stitch-types.jpg'); /* Replace with your image */
             background-size: cover;
             background-position: center;
             background-repeat: no-repeat;
@@ -37,7 +37,7 @@
             margin-top: 0;
 			margin-right: 2em;
 			margin-left: 2em;
-            background-color: rgba(128, 128, 128, 0.5);
+            background-color: rgba(0, 0, 0, 0.5);
             padding: 10px;
             border-radius: 5px;
             word-wrap: break-word; /* Ensure text fits in the container */
@@ -47,12 +47,21 @@
             font-size: 1em; /* Adjusted for mobile view */
             letter-spacing: 0.025em;
             margin-top: 0.5em;
+			display: flex;
+    justify-content: center; /* Horizontally center the icons */
+    align-items: center; /* Vertically center the icons */
         }
 
         .icon {
             font-size: 1em;
             margin: 0 10px;
         }
+
+		.phone-icon {
+    		font-size: 0.85em; /* Adjust the size as desired */
+			margin-left: 0.2em
+		}
+
 
         .contact-link {
             color: #fff;
@@ -92,6 +101,10 @@
             <a href="https://wa.me/1234567890" class="contact-link" target="_blank">
                 <i class="fa-brands fa-whatsapp icon"></i>
             </a>
+			<a href="tel:1234567890" class="contact-link"> <!-- Add 'tel:' to specify a phone number link -->
+				<i class="fa-solid fa-phone-alt icon phone-icon"></i> <!-- Use 'fa-phone-alt' for the phone icon -->
+			</a>
+
         </div>
     </div>
     <!-- Replace the following script src with your actual Font Awesome Kit script -->
