@@ -47,7 +47,7 @@
             font-size: 1.5em; /* Adjusted for mobile view */
             font-weight: 400;
 			margin-top: 0;
-            background-color: rgba(0, 0, 0, 0.5);
+            background-color: rgba(24, 24, 24, 0.5);
             padding: 10px;
             border-radius: 5px;
             word-wrap: break-word;
@@ -83,36 +83,46 @@
             opacity: 0.7;
         }
 
+		.company-logo {
+			position: absolute;
+			top: 10px;
+			left: 10px;
+			width: 150px; /* 10% of the viewport width */
+			height: auto;
+			z-index: 10;
+		}
+
         /* Media Queries for smaller screens */
-        @media screen and (max-width: 768px) {
+        @media screen and (max-width: 480px) {
             .brand-name {
                 font-size: 5em; /* Smaller font size on smaller screens */
+				margin-top: 100px;
             }
 
             .slogan {
                 font-size: 1.5em;
+				margin-left: 70px;
+				margin-right: 70px;
+				background-color: rgb(24, 24, 24, 0.5);
             }
 
             .contact-details {
                 font-size: 1.5em;
+				margin-top: 0.5em;
             }
 
 			.company-logo {
-				top: 20px; /* Adjust for phone screens */
-				left: 20px; /* Adjust for phone screens */
-				height: 80px; /* Optionally adjust size for phone screens */
-				position: center;
+				position: absolute;
+				height: 100px;
+				top: 10px; /* Adjust as needed */
+				left: 0;
+				right: 0;
+				margin: auto;
+				width: 180px; /* Adjust the size as needed */
+				height: auto;
 			}
         }
-		.company-logo {
-			position: absolute;
-			top: 5px;  /* Adjust the value as needed */
-			left: 10px; /* Adjust the value as needed */
-			height: 230px; /* Adjust the height as needed */
-			width: auto; /* This will maintain the aspect ratio of your logo */
-			z-index: 10; /* Ensure the logo stays on top of other elements */
 
-		}
 
     </style>
 </head>
